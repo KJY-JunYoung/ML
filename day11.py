@@ -1,8 +1,8 @@
-# from sklearn.linear_model import LinearRegression
-# import tglearn as tg
-# from tglearn import LinearRegression
+from sklearn.linear_model import LinearRegression
+import tglearn as tg
+from tglearn import LinearRegression
 from tglearn import KNeighborsRegressor
-# from sklearn.neighbors import KNeighborsRegressor
+from sklearn.neighbors import KNeighborsRegressor
 import pandas as pd
 import matplotlib.pyplot as plt
 
