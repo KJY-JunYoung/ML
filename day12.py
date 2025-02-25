@@ -13,6 +13,7 @@ df = pd.DataFrame(
 )
 
 print(df)
-i = SimpleImputer(strategy='mean')
-df[['A', 'B']] = i.fit_transform(df[['A', 'B']])
+#i = SimpleImputer(strategy='mean')
+#df[['A', 'B']] = i.fit_transform(df[['A', 'B']])
+df[['A', 'B']] = df[['A', 'B']].fillna(df[['A', 'B']].mean())
 print(df)
