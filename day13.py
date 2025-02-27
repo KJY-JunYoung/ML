@@ -17,8 +17,8 @@ mpg['company'] = mpg['name'].str.split().str[0]
 mpg.drop("name", axis=1, inplace=True)  # 'name' 열 삭제
 
 # 'origin'과 'company' 열에 OneHotEncoder 적용
-origin_encoder = OneHotEncoder(sparse_output=False)  # sparse_output=True로 설정하여 배열 형태로 반환
-company_encoder = OneHotEncoder(sparse_output=False)  # sparse_output=False로 설정하여 배열 형태로 반환
+origin_encoder = OneHotEncoder(sparse_output=False)
+company_encoder = OneHotEncoder(sparse_output=False)
 
 # 'origin' 열 OneHotEncoding
 origin_cat_1hot = origin_encoder.fit_transform(mpg[['origin']])
